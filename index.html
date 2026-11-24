@@ -1,0 +1,1364 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>磁力搜索磁力链接_原创视频品牌官网 | 高清内容生态与创作者社区</title>
+<meta name="description" content="磁力搜索磁力链接官方网站，专注原创视频内容生态与创作者社区运营，提供高清精品内容、专题企划、创作者矩阵与品牌故事，深耕垂直领域，持续运营值得信赖的视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121a2b'/%3E%3Cpath d='M32 12l16 10v20L32 52 16 42V22z' fill='none' stroke='%2334d399' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%2334d399'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mlx-bg:#0d1220;
+  --mlx-panel:#141c2e;
+  --mlx-panel-2:#1b2440;
+  --mlx-line:#28334f;
+  --mlx-text:#e8eefc;
+  --mlx-muted:#93a1c4;
+  --mlx-neon:#34d399;
+  --mlx-neon-2:#22d3ee;
+  --mlx-hot:#f472b6;
+  --mlx-radius:14px;
+  --mlx-max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--mlx-bg);
+  color:var(--mlx-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.3}
+p{margin:0 0 1em}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+
+.mlx-skip{position:absolute;left:-9999px;top:0;background:var(--mlx-neon);color:#06251a;padding:10px 16px;z-index:999}
+.mlx-skip:focus{left:8px;top:8px}
+
+/* ===== 吸顶公告 + 页头 ===== */
+.mlx-topbar-wrap{
+  position:sticky;top:0;z-index:120;
+  background:rgba(13,18,32,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--mlx-line);
+}
+.mlx-announce{
+  background:linear-gradient(90deg,#0f2a24,#123044 55%,#1a1f3d);
+  border-bottom:1px solid var(--mlx-line);
+  font-size:13px;
+}
+.mlx-announce-inner{
+  max-width:var(--mlx-max);margin:0 auto;padding:8px 20px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.mlx-announce-tag{
+  flex:none;background:var(--mlx-neon);color:#062b1f;font-weight:700;
+  font-size:12px;padding:2px 8px;border-radius:4px;letter-spacing:.5px;
+}
+.mlx-announce-list{
+  display:flex;gap:22px;flex-wrap:wrap;color:#cfe3ff;min-width:0;
+}
+.mlx-announce-list li{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mlx-announce-list b{color:var(--mlx-neon-2);font-weight:600}
+.mlx-announce-more{margin-left:auto;color:var(--mlx-neon);font-size:12px;white-space:nowrap}
+
+.mlx-header{
+  max-width:var(--mlx-max);margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:22px;min-height:64px;
+}
+.mlx-brand{display:flex;align-items:center;gap:10px;flex:none}
+.mlx-brand-mark{
+  width:36px;height:36px;border-radius:9px;
+  background:linear-gradient(135deg,#123b2f,#0f2f4a);
+  border:1px solid #2a5c4c;display:grid;place-items:center;
+}
+.mlx-brand-mark svg{width:22px;height:22px}
+.mlx-brand-name{font-size:17px;font-weight:800;letter-spacing:.5px}
+.mlx-brand-sub{display:block;font-size:10px;color:var(--mlx-muted);letter-spacing:2px;font-weight:400}
+.mlx-nav{display:flex;gap:4px;flex-wrap:wrap;min-width:0}
+.mlx-nav a{
+  font-size:14px;color:#b9c7e6;padding:8px 11px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.mlx-nav a:hover{color:var(--mlx-neon);background:rgba(52,211,153,.08)}
+.mlx-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.mlx-search{position:relative;display:flex;align-items:center}
+.mlx-search input{
+  width:190px;background:#0a101d;border:1px solid var(--mlx-line);
+  color:var(--mlx-text);border-radius:999px;padding:8px 36px 8px 14px;font-size:13px;
+  transition:.25s;
+}
+.mlx-search input:focus{outline:none;border-color:var(--mlx-neon);width:230px;box-shadow:0 0 0 3px rgba(52,211,153,.12)}
+.mlx-search button{position:absolute;right:6px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:var(--mlx-muted)}
+.mlx-search button:hover{color:var(--mlx-neon)}
+.mlx-search-hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;
+  background:#131b2d;border:1px solid var(--mlx-line);border-radius:10px;
+  padding:6px;font-size:13px;display:none;box-shadow:0 12px 30px rgba(0,0,0,.5);
+}
+.mlx-search-hint.mlx-open{display:block}
+.mlx-search-hint div{padding:7px 10px;border-radius:6px;color:#c8d5f0;cursor:pointer}
+.mlx-search-hint div:hover{background:rgba(52,211,153,.12);color:var(--mlx-neon)}
+.mlx-burger{display:none;width:40px;height:40px;border-radius:9px;border:1px solid var(--mlx-line);place-items:center}
+.mlx-burger span{display:block;width:18px;height:2px;background:var(--mlx-text);margin:3px 0;transition:.25s}
+.mlx-burger.mlx-open span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.mlx-burger.mlx-open span:nth-child(2){opacity:0}
+.mlx-burger.mlx-open span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+
+/* ===== 通用容器 ===== */
+.mlx-main{max-width:var(--mlx-max);margin:0 auto;padding:0 20px}
+.mlx-section{padding:56px 0 8px;scroll-margin-top:118px}
+.mlx-section:last-of-type{padding-bottom:20px}
+.mlx-eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:12px;letter-spacing:2px;color:var(--mlx-neon);
+  text-transform:uppercase;margin-bottom:10px;
+}
+.mlx-eyebrow::before{content:"";width:18px;height:1px;background:var(--mlx-neon)}
+.mlx-h2{font-size:clamp(23px,3.2vw,31px);font-weight:800;letter-spacing:.5px}
+.mlx-h2 em{font-style:normal;color:var(--mlx-neon)}
+.mlx-lead{color:var(--mlx-muted);font-size:14.5px;max-width:760px;margin-top:10px}
+.mlx-sec-head{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.mlx-sec-head .mlx-lead{flex:1 1 320px}
+.mlx-btn{
+  display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;
+  padding:10px 18px;border-radius:999px;transition:.22s;white-space:nowrap;
+}
+.mlx-btn-primary{background:linear-gradient(120deg,var(--mlx-neon),#0fb59c);color:#04231b;box-shadow:0 8px 22px rgba(52,211,153,.22)}
+.mlx-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(52,211,153,.3)}
+.mlx-btn-ghost{border:1px solid var(--mlx-line);color:#cfdcf9;background:rgba(255,255,255,.02)}
+.mlx-btn-ghost:hover{border-color:var(--mlx-neon);color:var(--mlx-neon)}
+.mlx-chip{
+  display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;
+  background:rgba(52,211,153,.1);color:#5ee9b8;border:1px solid rgba(52,211,153,.22);
+}
+.mlx-chip-cyan{background:rgba(34,211,238,.1);color:#67e8f9;border-color:rgba(34,211,238,.25)}
+.mlx-chip-hot{background:rgba(244,114,182,.1);color:#f9a8d4;border-color:rgba(244,114,182,.25)}
+
+/* ===== 首屏：左文右侧大图 + 数据条 ===== */
+.mlx-hero{
+  padding:54px 0 34px;
+  background:
+    radial-gradient(900px 420px at 82% -10%,rgba(34,211,238,.13),transparent 65%),
+    radial-gradient(700px 420px at 6% 10%,rgba(52,211,153,.1),transparent 60%);
+  border-bottom:1px solid rgba(40,51,79,.7);
+}
+.mlx-hero-grid{
+  display:grid;grid-template-columns:minmax(0,0.92fr) minmax(0,1.08fr);
+  gap:44px;align-items:center;
+}
+.mlx-hero-copy h1{font-size:clamp(32px,4.6vw,52px);font-weight:900;letter-spacing:1px;margin-bottom:14px}
+.mlx-hero-copy h1 span{color:var(--mlx-neon)}
+.mlx-hero-slogan{
+  font-size:15px;color:#9fb2d8;letter-spacing:1px;margin-bottom:16px;
+  border-left:3px solid var(--mlx-neon);padding-left:12px;
+}
+.mlx-hero-desc{color:#b7c4e2;font-size:14.6px}
+.mlx-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 26px}
+.mlx-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  border:1px solid var(--mlx-line);border-radius:var(--mlx-radius);overflow:hidden;
+  background:rgba(20,28,46,.65);
+}
+.mlx-hero-stat{padding:14px 16px;border-right:1px solid var(--mlx-line)}
+.mlx-hero-stat:last-child{border-right:none}
+.mlx-hero-stat b{display:block;font-size:24px;color:var(--mlx-neon);font-weight:900;letter-spacing:.5px}
+.mlx-hero-stat span{font-size:12px;color:var(--mlx-muted)}
+.mlx-hero-visual{position:relative}
+.mlx-hero-frame{
+  border-radius:20px;overflow:hidden;border:1px solid #2c3a5c;
+  box-shadow:0 30px 70px rgba(0,0,0,.5);
+  position:relative;
+}
+.mlx-hero-frame img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.mlx-hero-frame-badge{
+  position:absolute;left:14px;top:14px;z-index:2;
+  background:rgba(8,16,28,.75);backdrop-filter:blur(6px);
+  border:1px solid rgba(52,211,153,.4);border-radius:999px;
+  font-size:12px;padding:5px 12px;color:#8ff3cd;display:flex;align-items:center;gap:7px;
+}
+.mlx-live-dot{width:7px;height:7px;border-radius:50%;background:var(--mlx-neon);animation:mlxPulse 1.4s infinite}
+@keyframes mlxPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
+.mlx-hero-float{
+  position:absolute;right:-6px;bottom:-18px;z-index:3;
+  background:#101a2e;border:1px solid var(--mlx-line);border-radius:12px;
+  padding:12px 16px;box-shadow:0 16px 34px rgba(0,0,0,.45);
+  display:flex;align-items:center;gap:12px;max-width:88%;
+}
+.mlx-hero-float b{color:var(--mlx-neon);font-size:15px;display:block}
+.mlx-hero-float span{font-size:12px;color:var(--mlx-muted)}
+
+/* ===== 视频内容区：一幅重点大图 + 文字列表 ===== */
+.mlx-feature-grid{
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:30px;align-items:start;
+}
+.mlx-video-main{
+  border:1px solid var(--mlx-line);border-radius:var(--mlx-radius);overflow:hidden;
+  background:var(--mlx-panel);transition:.25s;
+}
+.mlx-video-main:hover{border-color:#3a4f7d;transform:translateY(-3px)}
+.mlx-video-main figure{margin:0;position:relative}
+.mlx-video-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.mlx-play{
+  position:absolute;inset:0;display:grid;place-items:center;background:rgba(6,12,22,.18);
+  transition:.25s;
+}
+.mlx-video-main:hover .mlx-play{background:rgba(6,12,22,.34)}
+.mlx-play i{
+  width:56px;height:56px;border-radius:50%;
+  background:rgba(52,211,153,.92);color:#04231b;
+  display:grid;place-items:center;font-style:normal;font-size:20px;
+  box-shadow:0 0 0 8px rgba(52,211,153,.16);
+}
+.mlx-video-main-body{padding:16px 18px 18px}
+.mlx-video-main-body h3{font-size:19px;margin-bottom:8px}
+.mlx-video-main-body p{color:var(--mlx-muted);font-size:13.6px;margin-bottom:12px}
+.mlx-meta{display:flex;gap:14px;flex-wrap:wrap;color:#8394ba;font-size:12.5px;align-items:center}
+
+.mlx-video-list{display:flex;flex-direction:column;gap:14px}
+.mlx-video-row{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;
+  border:1px solid var(--mlx-line);border-radius:12px;padding:14px 16px;
+  background:linear-gradient(100deg,rgba(20,28,46,.9),rgba(20,28,46,.5));
+  transition:.22s;
+}
+.mlx-video-row:hover{border-color:#3c5487;transform:translateX(3px)}
+.mlx-video-row h3{font-size:15.5px;margin-bottom:5px}
+.mlx-video-row p{font-size:13px;color:var(--mlx-muted);margin-bottom:9px}
+.mlx-video-row .mlx-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+.mlx-video-row .mlx-meta{font-size:12px;gap:12px}
+.mlx-video-row-thumb{width:118px;flex:none;border-radius:9px;overflow:hidden;border:1px solid #263250}
+.mlx-video-row-thumb img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.mlx-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.mlx-icon-btn{
+  width:34px;height:34px;border-radius:9px;border:1px solid var(--mlx-line);
+  display:grid;place-items:center;color:#95a6cb;transition:.2s;font-size:15px;
+}
+.mlx-icon-btn:hover{color:var(--mlx-neon);border-color:var(--mlx-neon);background:rgba(52,211,153,.08)}
+.mlx-icon-btn.mlx-active{color:var(--mlx-hot);border-color:rgba(244,114,182,.6);background:rgba(244,114,182,.1)}
+.mlx-count{font-size:12px;color:#8394ba;min-width:26px;text-align:center}
+
+/* ===== 专题 ===== */
+.mlx-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mlx-topic-card{
+  border:1px solid var(--mlx-line);border-radius:var(--mlx-radius);overflow:hidden;
+  background:var(--mlx-panel);display:flex;flex-direction:column;transition:.25s;
+}
+.mlx-topic-card:hover{border-color:#3c5487;transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.mlx-topic-card figure{margin:0;position:relative}
+.mlx-topic-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.mlx-topic-status{
+  position:absolute;right:10px;top:10px;font-size:11px;padding:3px 9px;border-radius:999px;
+  background:rgba(8,16,28,.78);border:1px solid rgba(52,211,153,.45);color:#8ff3cd;
+}
+.mlx-topic-body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.mlx-topic-body h3{font-size:17px}
+.mlx-topic-body>p{font-size:13.4px;color:var(--mlx-muted);margin:0}
+.mlx-topic-items{border-top:1px dashed #2a3552;padding-top:10px;margin-top:auto;display:flex;flex-direction:column;gap:8px}
+.mlx-topic-items li{font-size:13px;color:#c0cded;display:flex;gap:8px;align-items:flex-start}
+.mlx-topic-items li::before{content:"›";color:var(--mlx-neon);font-weight:700;flex:none}
+
+/* ===== 关键词解析 ===== */
+.mlx-parse{
+  border:1px solid var(--mlx-line);border-radius:18px;
+  background:
+    radial-gradient(600px 260px at 100% 0%,rgba(34,211,238,.08),transparent 60%),
+    var(--mlx-panel);
+  padding:30px 32px 14px;
+}
+.mlx-parse-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:30px}
+.mlx-parse h3{font-size:17.5px;margin:20px 0 10px;color:#d8e5ff}
+.mlx-parse p{font-size:14.2px;color:#b4c2e0}
+.mlx-parse-side{display:flex;flex-direction:column;gap:14px}
+.mlx-parse-note{
+  border:1px solid #2a3552;border-radius:12px;padding:15px 16px;background:rgba(9,15,26,.6);
+}
+.mlx-parse-note b{display:block;font-size:13px;color:var(--mlx-neon);margin-bottom:6px;letter-spacing:.5px}
+.mlx-parse-note p{font-size:13px;margin:0;color:var(--mlx-muted)}
+
+/* ===== 作者矩阵：双列简介 ===== */
+.mlx-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mlx-author-card{
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:15px;
+  border:1px solid var(--mlx-line);border-radius:var(--mlx-radius);
+  padding:17px 18px;background:var(--mlx-panel);transition:.22s;
+}
+.mlx-author-card:hover{border-color:#3c5487;background:var(--mlx-panel-2)}
+.mlx-avatar{
+  width:64px;height:64px;border-radius:50%;display:grid;place-items:center;
+  font-size:22px;font-weight:800;color:#04231b;letter-spacing:1px;
+  border:2px solid rgba(255,255,255,.12);
+}
+.mlx-av-1{background:linear-gradient(135deg,#34d399,#0891b2)}
+.mlx-av-2{background:linear-gradient(135deg,#f472b6,#a855f7)}
+.mlx-av-3{background:linear-gradient(135deg,#fbbf24,#f97316)}
+.mlx-av-4{background:linear-gradient(135deg,#22d3ee,#3b82f6)}
+.mlx-av-5{background:linear-gradient(135deg,#a3e635,#14b8a6)}
+.mlx-author-body h3{font-size:16px;margin-bottom:4px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mlx-author-field{font-size:12.5px;color:var(--mlx-neon-2);margin-bottom:7px}
+.mlx-author-nums{display:flex;gap:14px;font-size:12px;color:#8394ba;margin-bottom:8px}
+.mlx-author-body p{font-size:13.2px;color:var(--mlx-muted);margin:0}
+.mlx-author-more{margin-top:9px;font-size:12.5px;color:var(--mlx-neon);display:inline-flex;gap:5px;align-items:center}
+
+/* ===== 评论：引用摘录 + 短评列表 ===== */
+.mlx-quote-band{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:22px;
+}
+.mlx-quote{
+  border:1px solid var(--mlx-line);border-left:3px solid var(--mlx-neon);
+  border-radius:10px;padding:15px 17px;background:rgba(20,28,46,.72);
+  font-size:13.6px;color:#c3d0ee;
+}
+.mlx-quote b{display:block;margin-top:9px;font-size:12px;color:var(--mlx-neon-2);font-weight:600}
+.mlx-comment-list{display:flex;flex-direction:column;gap:12px}
+.mlx-comment{
+  display:grid;grid-template-columns:42px minmax(0,1fr);gap:13px;
+  border:1px solid var(--mlx-line);border-radius:12px;padding:14px 16px;background:var(--mlx-panel);
+}
+.mlx-avatar-sm{
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  font-size:15px;font-weight:800;color:#08211a;
+}
+.mlx-comment-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.mlx-comment-head b{font-size:13.6px}
+.mlx-comment-head time{font-size:11.5px;color:#7182a8}
+.mlx-comment p{font-size:13.6px;color:#bccae7;margin:0 0 6px}
+.mlx-score{color:#fbbf24;font-size:12px;letter-spacing:1px}
+
+/* ===== 账号/创作灵感 交叉区 ===== */
+.mlx-inspire-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px}
+.mlx-inspire-card{
+  border:1px solid var(--mlx-line);border-radius:var(--mlx-radius);
+  padding:20px 22px;background:linear-gradient(150deg,#151f34,#101828);
+}
+.mlx-inspire-card h3{font-size:17px;margin-bottom:12px}
+.mlx-inspire-list{display:flex;flex-direction:column;gap:10px}
+.mlx-inspire-list li{
+  font-size:13.6px;color:#b9c7e6;border:1px dashed #2d3959;border-radius:9px;
+  padding:9px 12px;transition:.2s;
+}
+.mlx-inspire-list li:hover{border-color:var(--mlx-neon);color:var(--mlx-neon)}
+.mlx-log{display:flex;flex-direction:column;gap:12px}
+.mlx-log li{display:grid;grid-template-columns:80px minmax(0,1fr);gap:12px;font-size:13.4px;color:#aebbd9}
+.mlx-log time{color:var(--mlx-neon-2);font-size:12.5px}
+
+/* ===== FAQ ===== */
+.mlx-faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 18px;align-items:start}
+.mlx-faq details{
+  border:1px solid var(--mlx-line);border-radius:11px;padding:13px 16px;
+  background:var(--mlx-panel);transition:.2s;
+}
+.mlx-faq details[open]{border-color:#3c5487;background:var(--mlx-panel-2)}
+.mlx-faq summary{
+  font-size:14px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+.mlx-faq summary::-webkit-details-marker{display:none}
+.mlx-faq summary::after{content:"+";color:var(--mlx-neon);font-size:17px;font-weight:400;flex:none}
+.mlx-faq details[open] summary::after{content:"−"}
+.mlx-faq p{font-size:13.2px;color:var(--mlx-muted);margin:10px 0 0}
+
+/* ===== 合作伙伴 ===== */
+.mlx-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mlx-partner{
+  border:1px solid var(--mlx-line);border-radius:12px;padding:16px;
+  display:flex;align-items:center;gap:11px;background:rgba(20,28,46,.6);transition:.2s;
+}
+.mlx-partner:hover{border-color:#3c5487;background:var(--mlx-panel-2)}
+.mlx-partner-mark{
+  width:38px;height:38px;border-radius:9px;flex:none;display:grid;place-items:center;
+  font-weight:800;font-size:15px;color:#04231b;background:linear-gradient(135deg,#34d399,#22d3ee);
+}
+.mlx-partner b{display:block;font-size:13.6px}
+.mlx-partner span{font-size:11.5px;color:var(--mlx-muted)}
+
+/* ===== CTA 投稿 ===== */
+.mlx-cta{
+  margin:52px 0 10px;border-radius:20px;padding:36px 34px;
+  border:1px solid #2c4a44;
+  background:
+    radial-gradient(520px 240px at 88% 10%,rgba(52,211,153,.2),transparent 65%),
+    linear-gradient(120deg,#102436,#121a2c);
+  display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);
+  gap:26px;align-items:center;
+}
+.mlx-cta h2{font-size:clamp(21px,3vw,28px);margin-bottom:10px}
+.mlx-cta p{color:#a9bcdd;font-size:14px;margin:0}
+.mlx-cta-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+
+/* ===== 页脚 ===== */
+.mlx-footer{
+  margin-top:40px;border-top:1px solid var(--mlx-line);
+  background:#0a1020;padding:42px 0 26px;
+}
+.mlx-footer-grid{
+  max-width:var(--mlx-max);margin:0 auto;padding:0 20px;
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:28px;
+}
+.mlx-footer h4{font-size:14px;margin-bottom:12px;color:#dbe6ff;letter-spacing:.5px}
+.mlx-footer p{font-size:13px;color:var(--mlx-muted)}
+.mlx-footer ul li{font-size:13px;color:#8595ba;margin-bottom:8px}
+.mlx-footer ul li a:hover{color:var(--mlx-neon)}
+.mlx-footer-bottom{
+  max-width:var(--mlx-max);margin:26px auto 0;padding:16px 20px 0;
+  border-top:1px solid #1c2540;font-size:12.5px;color:#6f80a6;
+  display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;
+}
+
+/* ===== 浮动工具 ===== */
+.mlx-totop{
+  position:fixed;right:22px;bottom:26px;z-index:130;
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(20,28,46,.92);border:1px solid var(--mlx-line);color:var(--mlx-neon);
+  display:grid;place-items:center;font-size:18px;
+  opacity:0;pointer-events:none;transition:.25s;backdrop-filter:blur(8px);
+}
+.mlx-totop.mlx-show{opacity:1;pointer-events:auto}
+.mlx-totop:hover{border-color:var(--mlx-neon);transform:translateY(-3px)}
+.mlx-toast{
+  position:fixed;left:50%;bottom:32px;transform:translate(-50%,20px);z-index:200;
+  background:#0f2b25;border:1px solid rgba(52,211,153,.5);color:#9df3d3;
+  font-size:13.5px;padding:11px 20px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.28s;box-shadow:0 14px 34px rgba(0,0,0,.5);
+  max-width:90vw;text-align:center;
+}
+.mlx-toast.mlx-show{opacity:1;transform:translate(-50%,0)}
+
+/* ===== 弹窗 ===== */
+.mlx-modal{
+  position:fixed;inset:0;z-index:190;display:none;place-items:center;
+  background:rgba(5,9,17,.72);backdrop-filter:blur(4px);padding:20px;
+}
+.mlx-modal.mlx-open{display:grid}
+.mlx-modal-box{
+  width:min(520px,100%);background:#121a2c;border:1px solid var(--mlx-line);
+  border-radius:16px;padding:24px 24px 20px;position:relative;
+  box-shadow:0 30px 70px rgba(0,0,0,.6);max-height:86vh;overflow:auto;
+}
+.mlx-modal-box h3{font-size:18px;margin-bottom:8px;padding-right:30px}
+.mlx-modal-box p{font-size:13.6px;color:var(--mlx-muted)}
+.mlx-modal-close{position:absolute;right:14px;top:12px;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;color:#9fb0d4;border:1px solid var(--mlx-line)}
+.mlx-modal-close:hover{color:var(--mlx-hot);border-color:var(--mlx-hot)}
+.mlx-field{margin-bottom:12px}
+.mlx-field label{display:block;font-size:12.5px;color:#9fb0d4;margin-bottom:5px}
+.mlx-field input,.mlx-field textarea{
+  width:100%;background:#0b1220;border:1px solid var(--mlx-line);border-radius:9px;
+  color:var(--mlx-text);padding:9px 12px;font-size:13.5px;
+}
+.mlx-field textarea{min-height:84px;resize:vertical}
+.mlx-field input:focus,.mlx-field textarea:focus{outline:none;border-color:var(--mlx-neon)}
+.mlx-share-row{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 6px}
+.mlx-share-row button{border:1px solid var(--mlx-line);border-radius:999px;padding:8px 15px;font-size:13px;color:#c6d3ef}
+.mlx-share-row button:hover{border-color:var(--mlx-neon);color:var(--mlx-neon)}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .mlx-hero-grid{grid-template-columns:1fr;gap:30px}
+  .mlx-feature-grid{grid-template-columns:1fr}
+  .mlx-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mlx-parse-grid{grid-template-columns:1fr}
+  .mlx-inspire-grid{grid-template-columns:1fr}
+  .mlx-cta{grid-template-columns:1fr}
+  .mlx-cta-actions{justify-content:flex-start}
+  .mlx-footer-grid{grid-template-columns:1fr 1fr}
+  .mlx-quote-band{grid-template-columns:1fr}
+  .mlx-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mlx-faq{grid-template-columns:1fr}
+}
+@media (max-width:820px){
+  .mlx-nav{display:none;width:100%;order:4;padding:8px 0 14px;border-top:1px solid var(--mlx-line);margin-top:4px}
+  .mlx-nav.mlx-open{display:flex}
+  .mlx-header{flex-wrap:wrap;padding-top:10px;padding-bottom:0}
+  .mlx-header-tools{margin-left:auto}
+  .mlx-search input{width:150px}
+  .mlx-search input:focus{width:170px}
+  .mlx-burger{display:grid}
+  .mlx-author-grid{grid-template-columns:1fr}
+  .mlx-topic-grid{grid-template-columns:1fr}
+  .mlx-hero-stats{grid-template-columns:1fr}
+  .mlx-hero-stat{border-right:none;border-bottom:1px solid var(--mlx-line)}
+  .mlx-hero-stat:last-child{border-bottom:none}
+  .mlx-hero-float{position:static;margin-top:12px;max-width:100%}
+}
+@media (max-width:560px){
+  .mlx-video-row{grid-template-columns:1fr}
+  .mlx-video-row-thumb{width:100%}
+  .mlx-video-row-thumb img{aspect-ratio:16/9}
+  .mlx-footer-grid{grid-template-columns:1fr}
+  .mlx-partners{grid-template-columns:1fr}
+  .mlx-parse{padding:22px 18px 8px}
+  .mlx-cta{padding:26px 20px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="mlx-skip" href="#mlx-content">跳转到主要内容</a>
+
+<!-- S1 公告条 + 页头 -->
+<div class="mlx-topbar-wrap" id="mlx-top">
+  <div class="mlx-announce">
+    <div class="mlx-announce-inner">
+      <span class="mlx-announce-tag">官方发布</span>
+      <ul class="mlx-announce-list">
+        <li><b>11/22</b> 磁力搜索磁力链接「城市切片」第二季上线，首周更新 8 条原创短片</li>
+        <li><b>11/20</b> 创作者扶持计划第三期开放报名，投稿入口已开启</li>
+        <li><b>11/18</b> 高清片库完成画质升级，支持 4K 流畅播放</li>
+      </ul>
+      <a class="mlx-announce-more" href="#mlx-log">查看全部更新 ›</a>
+    </div>
+  </div>
+  <header class="mlx-header">
+    <a class="mlx-brand" href="#mlx-top" aria-label="磁力搜索磁力链接官方网站首页">
+      <span class="mlx-brand-mark">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 10l18 11v22L32 54 14 43V21z" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="32" cy="32" r="7" fill="#34d399"/></svg>
+      </span>
+      <span>
+        <span class="mlx-brand-name">磁力搜索磁力链接</span>
+        <span class="mlx-brand-sub">OFFICIAL VIDEO</span>
+      </span>
+    </a>
+    <nav class="mlx-nav" id="mlx-nav" aria-label="主导航">
+      <a href="#mlx-feature">精选内容</a>
+      <a href="#mlx-topics">专题企划</a>
+      <a href="#mlx-parse">品牌解析</a>
+      <a href="#mlx-authors">创作者</a>
+      <a href="#mlx-reviews">用户口碑</a>
+      <a href="#mlx-log">企业动态</a>
+      <a href="#mlx-faq">常见问题</a>
+    </nav>
+    <div class="mlx-header-tools">
+      <div class="mlx-search">
+        <input type="search" id="mlx-search-input" placeholder="搜索视频 / 创作者 / 专题" aria-label="站内搜索" autocomplete="off">
+        <button type="button" id="mlx-search-btn" aria-label="执行搜索">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <div class="mlx-search-hint" id="mlx-search-hint"></div>
+      </div>
+      <button class="mlx-burger" id="mlx-burger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="mlx-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<main id="mlx-content">
+  <!-- S2 品牌首屏 -->
+  <section class="mlx-hero" aria-labelledby="mlx-hero-title">
+    <div class="mlx-main">
+      <div class="mlx-hero-grid">
+        <div class="mlx-hero-copy">
+          <p class="mlx-eyebrow">企业级视频品牌官网</p>
+          <h1 id="mlx-hero-title">磁力搜索<span>磁力链接</span></h1>
+          <p class="mlx-hero-slogan">以原创影像连接信息与灵感，做值得信赖的高清视频内容平台</p>
+          <p class="mlx-hero-desc">磁力搜索磁力链接官方网站，是面向创作者与内容用户打造的视频品牌门户。我们深耕影像内容垂直领域，持续运营原创短片、行业观察、创作者访谈与实用教程，以专业的策划、正版高清的片源和开放的社区机制，为每一位用户提供稳定、品质、有温度的内容体验。作为持续运营的企业内容平台，我们坚持用户至上与匠心制作，让每一次观看都成为一次真实的连接。</p>
+          <div class="mlx-hero-actions">
+            <a class="mlx-btn mlx-btn-primary" href="#mlx-feature">进入精选片库</a>
+            <a class="mlx-btn mlx-btn-ghost" href="#mlx-authors">认识创作者</a>
+            <button class="mlx-btn mlx-btn-ghost" type="button" data-mlx-modal="submit">我要投稿</button>
+          </div>
+          <div class="mlx-hero-stats">
+            <div class="mlx-hero-stat"><b data-mlx-count="12860">12860</b><span>原创高清视频条目</span></div>
+            <div class="mlx-hero-stat"><b data-mlx-count="486">486</b><span>签约与入驻创作者</span></div>
+            <div class="mlx-hero-stat"><b data-mlx-count="92">92</b><span>月度精品专题企划</span></div>
+          </div>
+        </div>
+        <div class="mlx-hero-visual">
+          <div class="mlx-hero-frame">
+            <span class="mlx-hero-frame-badge"><i class="mlx-live-dot"></i>官方首映 · 11/22</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 440'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230c2233'/%3E%3Cstop offset='.55' stop-color='%23112b3f'/%3E%3Cstop offset='1' stop-color='%231c3b52'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2334d399'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='440' fill='url(%23a)'/%3E%3Cg opacity='.5' stroke='%232b5871' stroke-width='1'%3E%3Cpath d='M0 320L120 250 240 300 360 220 480 270 640 190'/%3E%3Cpath d='M0 370L140 310 280 350 420 280 560 320 640 290'/%3E%3C/g%3E%3Ccircle cx='470' cy='120' r='64' fill='none' stroke='url(%23b)' stroke-width='2' opacity='.7'/%3E%3Ccircle cx='470' cy='120' r='40' fill='none' stroke='url(%23b)' stroke-width='1.5' opacity='.45'/%3E%3Cpath d='M470 84l28 36-28 36-28-36z' fill='url(%23b)' opacity='.9'/%3E%3Cg fill='%236fe7c0'%3E%3Ccircle cx='120' cy='150' r='4'/%3E%3Ccircle cx='210' cy='110' r='3'/%3E%3Ccircle cx='320' cy='160' r='3.5'/%3E%3Ccircle cx='565' cy='330' r='4'/%3E%3C/g%3E%3Cg stroke='%2322d3ee' stroke-width='2' opacity='.55'%3E%3Cpath d='M90 380h150'/%3E%3Cpath d='M90 396h96'/%3E%3C/g%3E%3Ctext x='60' y='90' fill='%23e8eefc' font-family='sans-serif' font-size='26' font-weight='bold'%3E城市切片%3C/text%3E%3Ctext x='60' y='118' fill='%238ff3cd' font-family='sans-serif' font-size='13' letter-spacing='3'%3ESERIES II%3C/text%3E%3C/svg%3E" width="640" height="440" alt="磁力搜索磁力链接官方首映主视觉：城市切片第二季深蓝影像海报">
+          </div>
+          <div class="mlx-hero-float">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M4 18V8l8-4 8 4v10l-8 4z"/><path d="M12 12v8"/></svg>
+            <div>
+              <b>4K 高清 · 正版片源</b>
+              <span>企业级内容生态，每日更新原创精品</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 主内容入口：精选视频 -->
+  <section class="mlx-section" id="mlx-feature" aria-labelledby="mlx-feature-title">
+    <div class="mlx-main">
+      <div class="mlx-sec-head">
+        <div>
+          <p class="mlx-eyebrow">精选内容</p>
+          <h2 class="mlx-h2" id="mlx-feature-title">本周<em>焦点</em>与热门视频流</h2>
+          <p class="mlx-lead">磁力搜索磁力链接编辑部每周精选原创内容，围绕城市探索、创作幕后与行业观察组织片单，兼顾深度与观看节奏。</p>
+        </div>
+        <a class="mlx-btn mlx-btn-ghost" href="#mlx-topics">查看全部专题 ›</a>
+      </div>
+
+      <div class="mlx-feature-grid">
+        <article class="mlx-video-main">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='c' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23161f3a'/%3E%3Cstop offset='1' stop-color='%230d2a35'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23c)'/%3E%3Cg fill='none' stroke='%2334d399' stroke-width='1.4' opacity='.65'%3E%3Crect x='70' y='70' width='160' height='96' rx='6'/%3E%3Crect x='250' y='96' width='140' height='84' rx='6'/%3E%3Crect x='410' y='64' width='150' height='104' rx='6'/%3E%3Crect x='140' y='196' width='170' height='92' rx='6'/%3E%3Crect x='330' y='186' width='180' height='100' rx='6'/%3E%3C/g%3E%3Cg fill='%2322d3ee' opacity='.5'%3E%3Ccircle cx='150' cy='118' r='18'/%3E%3Ccircle cx='320' cy='138' r='14'/%3E%3Ccircle cx='485' cy='116' r='20'/%3E%3C/g%3E%3Cg stroke='%2322d3ee' stroke-width='2' opacity='.4'%3E%3Cpath d='M70 320h500'/%3E%3C/g%3E%3Ctext x='70' y='44' fill='%23d8e5ff' font-family='sans-serif' font-size='19' font-weight='bold'%3E剪辑台上的六个夜晚%3C/text%3E%3C/svg%3E" width="640" height="360" alt="创作幕后专题封面：剪辑台上排列的多个时间线画面示意">
+            <div class="mlx-play"><i>▶</i></div>
+          </figure>
+          <div class="mlx-video-main-body">
+            <h3>剪辑台上的六个夜晚：一条短片的成型全过程</h3>
+            <p>跟随主创团队进入后期机房，从素材整理、粗剪到调色与声音设计，完整还原一条原创短片在六个夜晚里被反复推翻又重建的过程，也记录下创作者最真实的自疑与坚持。</p>
+            <div class="mlx-tags" style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px">
+              <span class="mlx-chip">创作幕后</span>
+              <span class="mlx-chip mlx-chip-cyan">教程干货</span>
+              <span class="mlx-chip mlx-chip-hot">官方推荐</span>
+            </div>
+            <div class="mlx-meta">
+              <span>导演组 · 林知野</span>
+              <span>播放 18.6万</span>
+              <span>收藏 9,240</span>
+              <span>12:48</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="mlx-video-list">
+          <article class="mlx-video-row">
+            <div>
+              <h3>城市切片的十二种走法：老街晨光与夜市收摊</h3>
+              <p>用一天时间穿过老城区的三条街道，从清晨的早餐摊到夜里收摊的手推车，记录城市最日常也最有力量的段落。</p>
+              <div class="mlx-tags"><span class="mlx-chip">城市探索</span><span class="mlx-chip mlx-chip-cyan">日常记录</span></div>
+              <div class="mlx-meta"><span>@半城影像</span><span>播放 9.2万</span><span>点赞 6,812</span></div>
+            </div>
+            <div class="mlx-video-row-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 236 148'%3E%3Crect width='236' height='148' fill='%23172a3b'/%3E%3Cg fill='%23fbbf24' opacity='.85'%3E%3Ccircle cx='60' cy='46' r='16'/%3E%3C/g%3E%3Cg stroke='%23f472b6' stroke-width='2' opacity='.55'%3E%3Cpath d='M0 108h236'/%3E%3Cpath d='M0 124h236'/%3E%3C/g%3E%3Cg fill='%23f9a8d4' opacity='.7'%3E%3Crect x='24' y='84' width='26' height='30' rx='3'/%3E%3Crect x='70' y='90' width='20' height='24' rx='3'/%3E%3Crect x='140' y='80' width='30' height='34' rx='3'/%3E%3Crect x='190' y='92' width='22' height='22' rx='3'/%3E%3C/g%3E%3C/svg%3E" width="236" height="148" alt="城市探索视频缩略图：晨光下的老街与夜市摊位剪影">
+            </div>
+          </article>
+
+          <article class="mlx-video-row">
+            <div>
+              <h3>一条视频的十个标题：从信息结构到情绪钩子</h3>
+              <p>拆解 30 条高完播率视频的标题构造规律，给出可直接套用的标题公式与避坑清单，适合刚起步的内容创作者。</p>
+              <div class="mlx-tags"><span class="mlx-chip mlx-chip-cyan">实用技巧</span><span class="mlx-chip">知识科普</span></div>
+              <div class="mlx-meta"><span>@选题研究员</span><span>播放 15.4万</span><span>点赞 1.1万</span></div>
+            </div>
+            <div class="mlx-video-row-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 236 148'%3E%3Crect width='236' height='148' fill='%23101d32'/%3E%3Cg stroke='%2322d3ee' stroke-width='1.6' opacity='.8'%3E%3Cpath d='M26 100h30M26 82h64M26 64h48M26 46h84'/%3E%3C/g%3E%3Cg fill='none' stroke='%2334d399' stroke-width='2'%3E%3Crect x='140' y='40' width='72' height='68' rx='6'/%3E%3Cpath d='M158 74l14 12 22-26'/%3E%3C/g%3E%3C/svg%3E" width="236" height="148" alt="教程视频缩略图：标题结构拆解文字与勾选图形">
+            </div>
+          </article>
+
+          <article class="mlx-video-row">
+            <div>
+              <h3>独立摄影师的器材减法：只用一支定焦拍完整季</h3>
+              <p>器材越多，选择越少。这位摄影师用一支 35mm 定焦完成整季拍摄，聊了聊限制如何反过来激发创作自由。</p>
+              <div class="mlx-tags"><span class="mlx-chip">行业观察</span><span class="mlx-chip mlx-chip-cyan">深度测评</span></div>
+              <div class="mlx-meta"><span>@光棚笔记</span><span>播放 7.8万</span><span>收藏 4,120</span></div>
+            </div>
+            <div class="mlx-video-row-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 236 148'%3E%3Crect width='236' height='148' fill='%2320192e'/%3E%3Ccircle cx='118' cy='74' r='42' fill='none' stroke='%23a855f7' stroke-width='3'/%3E%3Ccircle cx='118' cy='74' r='20' fill='none' stroke='%23f472b6' stroke-width='2'/%3E%3Cg stroke='%23f472b6' stroke-width='1.4' opacity='.55'%3E%3Cpath d='M118 12v22M118 114v22M40 74h24M172 74h24'/%3E%3C/g%3E%3C/svg%3E" width="236" height="148" alt="器材测评视频缩略图：镜头光圈的抽象几何图形">
+            </div>
+          </article>
+
+          <article class="mlx-video-row">
+            <div>
+              <h3>对话三位新人创作者：第一次被看见是什么感觉</h3>
+              <p>三位入驻不到半年的创作者聊了第一次收到长评、第一次登上推荐位的心情，也谈了他们对持续更新的理解。</p>
+              <div class="mlx-tags"><span class="mlx-chip">人物访谈</span><span class="mlx-chip mlx-chip-hot">社区故事</span></div>
+              <div class="mlx-meta"><span>@内容编辑部</span><span>播放 5.3万</span><span>点赞 4,806</span></div>
+            </div>
+            <div class="mlx-video-row-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 236 148'%3E%3Crect width='236' height='148' fill='%231a2438'/%3E%3Cg fill='%2334d399' opacity='.85'%3E%3Ccircle cx='70' cy='66' r='20'/%3E%3Ccircle cx='166' cy='80' r='16'/%3E%3C/g%3E%3Cg fill='%2322d3ee' opacity='.6'%3E%3Ccircle cx='118' cy='104' r='12'/%3E%3C/g%3E%3Cg stroke='%2322d3ee' stroke-width='1.5' opacity='.5'%3E%3Cpath d='M70 96h96'/%3E%3C/g%3E%3C/svg%3E" width="236" height="148" alt="人物访谈视频缩略图：三位创作者头像圆形排列">
+            </div>
+          </article>
+
+          <article class="mlx-video-row">
+            <div>
+              <h3>声音是怎么救回一条废片的：拟音与混音实录</h3>
+              <p>画面不够，声音来凑。拟音师现场演示如何用一把钥匙、一件旧外套和一杯水，重建整场戏的空间感与情绪。</p>
+              <div class="mlx-tags"><span class="mlx-chip mlx-chip-cyan">教程干货</span><span class="mlx-chip">创作幕后</span></div>
+              <div class="mlx-meta"><span>@声场实验室</span><span>播放 11.2万</span><span>收藏 6,509</span></div>
+            </div>
+            <div class="mlx-video-row-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 236 148'%3E%3Crect width='236' height='148' fill='%230f1f2c'/%3E%3Cg stroke='%2322d3ee' stroke-width='2' fill='none' opacity='.85'%3E%3Cpath d='M20 74q14-34 28 0t28 0 28 0 28 0 28 0 28 0'/%3E%3C/g%3E%3Cg stroke='%2334d399' stroke-width='1.4' opacity='.6'%3E%3Cpath d='M20 104q14-20 28 0t28 0 28 0 28 0 28 0 28 0'/%3E%3C/g%3E%3C/svg%3E" width="236" height="148" alt="声音制作视频缩略图：两道起伏的声波曲线">
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="mlx-tags" style="display:flex;gap:9px;flex-wrap:wrap;margin-top:24px" aria-label="视频标签筛选">
+        <button class="mlx-btn mlx-btn-ghost" type="button">全部</button>
+        <button class="mlx-btn mlx-btn-ghost" type="button">城市探索</button>
+        <button class="mlx-btn mlx-btn-ghost" type="button">创作幕后</button>
+        <button class="mlx-btn mlx-btn-ghost" type="button">人物访谈</button>
+        <button class="mlx-btn mlx-btn-ghost" type="button">教程干货</button>
+        <button class="mlx-btn mlx-btn-ghost" type="button">行业观察</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="mlx-section" id="mlx-topics" aria-labelledby="mlx-topics-title">
+    <div class="mlx-main">
+      <div class="mlx-sec-head">
+        <div>
+          <p class="mlx-eyebrow">专题企划</p>
+          <h2 class="mlx-h2" id="mlx-topics-title">磁力搜索磁力链接<em>品牌企划</em>进行中</h2>
+          <p class="mlx-lead">每个专题由官方编辑部与入驻创作者共同策划，以稳定的更新节奏持续运营，形成可被反复观看的精品内容集合。</p>
+        </div>
+      </div>
+      <div class="mlx-topic-grid">
+        <article class="mlx-topic-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='d' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23223a5e'/%3E%3Cstop offset='1' stop-color='%23101a2c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23d)'/%3E%3Cg fill='%23e8eefc' opacity='.9'%3E%3Crect x='70' y='120' width='90' height='150' rx='4'/%3E%3Crect x='180' y='86' width='110' height='184' rx='4'/%3E%3Crect x='310' y='140' width='80' height='130' rx='4'/%3E%3Crect x='410' y='100' width='120' height='170' rx='4'/%3E%3C/g%3E%3Cg fill='%2334d399' opacity='.7'%3E%3Crect x='85' y='140' width='60' height='8'/%3E%3Crect x='195' y='108' width='80' height='8'/%3E%3Crect x='325' y='160' width='50' height='8'/%3E%3Crect x='425' y='122' width='90' height='8'/%3E%3C/g%3E%3C/svg%3E" width="640" height="360" alt="城市切片专题封面：高低错落的城市建筑剪影">
+            <span class="mlx-topic-status">更新至第 8 集</span>
+          </figure>
+          <div class="mlx-topic-body">
+            <h3>城市切片 第二季</h3>
+            <p>以一条街道为观察单位，记录城市在不同时间段的表情。第二季新增夜间拍摄单元与居民口述史段落。</p>
+            <ul class="mlx-topic-items">
+              <li>《清晨六点的早点铺与第一班公交》</li>
+              <li>《旧书街的第三次搬迁》</li>
+              <li>《夜班出租司机的路线图》</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="mlx-topic-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%230e2229'/%3E%3Cg stroke='%2334d399' stroke-width='2' fill='none'%3E%3Cpath d='M80 260q80-160 160 0t160 0 160 0'/%3E%3C/g%3E%3Cg fill='%2322d3ee' opacity='.75'%3E%3Ccircle cx='120' cy='110' r='28'/%3E%3Ccircle cx='320' cy='90' r='20'/%3E%3Ccircle cx='500' cy='120' r='34'/%3E%3C/g%3E%3Cg stroke='%2322d3ee' stroke-width='1.5' opacity='.5'%3E%3Cpath d='M60 300h520'/%3E%3C/g%3E%3C/svg%3E" width="640" height="360" alt="声音实验室专题封面：声波曲线与音符圆形图形">
+            <span class="mlx-topic-status">连载中 · 双周更</span>
+          </figure>
+          <div class="mlx-topic-body">
+            <h3>声音实验室</h3>
+            <p>从拟音、混音到配乐选择，把声音制作的完整链条拆成可复用的方法，适合短片创作者系统补齐听觉功课。</p>
+            <ul class="mlx-topic-items">
+              <li>《用日常物件做一套拟音库》</li>
+              <li>《配乐不要压过台词：三条混音原则》</li>
+              <li>《安静的力量：留白在影像中的用法》</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="mlx-topic-card">
+          <figure>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23231535'/%3E%3Cg fill='%23f472b6' opacity='.85'%3E%3Ccircle cx='180' cy='150' r='44'/%3E%3C/g%3E%3Cg fill='%23fbbf24' opacity='.8'%3E%3Ccircle cx='330' cy='200' r='30'/%3E%3C/g%3E%3Cg fill='%23a855f7' opacity='.8'%3E%3Ccircle cx='470' cy='130' r='52'/%3E%3C/g%3E%3Cg stroke='%23f472b6' stroke-width='2' opacity='.5'%3E%3Cpath d='M90 300h460'/%3E%3C/g%3E%3Ctext x='90' y='72' fill='%23f9a8d4' font-family='sans-serif' font-size='18'%3E第一次被看见%3C/text%3E%3C/svg%3E" width="640" height="360" alt="新人创作者专题封面：粉色与紫色圆形头像符号">
+            <span class="mlx-topic-status">开放投稿</span>
+          </figure>
+          <div class="mlx-topic-body">
+            <h3>第一次被看见</h3>
+            <p>面向入驻不足一年的新人创作者，记录他们的第一部作品、第一条长评与第一次被推荐的真实体验，鼓励更多原创表达。</p>
+            <ul class="mlx-topic-items">
+              <li>《拍了十三条才敢发第一条》</li>
+              <li>《评论区是我最好的老师》</li>
+              <li>《从 0 到 5000 播放的三周》</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析（M15 深度解析，融入正文） -->
+  <section class="mlx-section" id="mlx-parse" aria-labelledby="mlx-parse-title">
+    <div class="mlx-main">
+      <div class="mlx-parse">
+        <p class="mlx-eyebrow">品牌深度解析</p>
+        <h2 class="mlx-h2" id="mlx-parse-title">读懂<em>磁力搜索磁力链接</em>的内容逻辑</h2>
+        <div class="mlx-parse-grid">
+          <div>
+            <h3>一、从一次检索到一段影像：我们如何理解内容的价值</h3>
+            <p>“磁力搜索磁力链接”这组词，在大多数人的日常经验里，指向的是一种高效的信息获取方式：输入关键词，等待结果，快速抵达想看的内容。但作为一家视频品牌企业，我们对它的理解不止于效率。磁力搜索磁力链接官方网站从创立之初就确立了一条清晰的判断——检索只是入口，真正决定用户是否留下来的是内容本身的品质与观看之后的感受。因此我们没有把平台做成单纯的聚合索引，而是投入长期资源建设原创内容生态：建立选题委员会、设立创作者扶持计划、搭建高清片源与转码体系、组建专职的审核与编辑团队。每一条进入精选区的内容，都要经过选题、脚本、拍摄、后期、字幕、版权核查的多轮流程，这也是我们坚持“正版、原创、高清”三个底线的具体落点。</p>
+            <p>在实际运营中，我们发现用户对“磁力搜索磁力链接”的期待是分层的。第一层是快：希望尽快找到想看的内容类型；第二层是准：希望结果与自己的兴趣高度匹配；第三层是久：希望找到的内容有持续更新的生命力，而不是一次性的消耗品。平台据此设计了三条并行的内容通道——官方自制、创作者入驻、用户投稿，分别对应不同层次的期待。官方自制负责品质标杆与品牌调性，创作者入驻负责垂类的深度与多元，用户投稿则保留了社区最鲜活的真实感。三条通道共享同一套数据与推荐机制，也共享同一套版权与合规标准。</p>
+            <h3>二、内容生态怎么搭：三通道、双审核与一条长期主义</h3>
+            <p>视频平台最容易犯的错误是只做数量，不做结构。磁力搜索磁力链接的内容生态以“三通道 + 双审核”为骨架。三通道即前述的官方自制、创作者入驻与用户投稿，各自有清晰的定位与配额；双审核指机器初筛与人工复审并行，机器负责版权指纹比对、敏感信息识别与画质检测，人工负责价值判断、叙事完整性与社区规范。双审核并不追求高效到极致，我们宁可让一条视频多等两天，也不愿让它带着瑕疵出现在用户面前。这条原则在早期让我们损失了一些更新速度，却在口碑上挣回了更多。</p>
+            <p>长期主义体现在更新节奏而非爆款数量上。我们为每个专题设定明确的更新周期与完结条件，避免无限拖更消耗用户耐心；为每位签约创作者设定合理的产出预期，避免用日更压力催生同质化内容；为每一条精品内容保留至少半年的推荐位生命周期，让好内容有机会被不同时间段的用户反复遇见。磁力搜索磁力链接相信，持续运营比一次性爆发更能建立值得信赖的品牌印象，这也是我们把自己定位为“企业级内容平台”而非短期流量产品的原因。</p>
+            <h3>三、创作者为什么留下：分成、成长与社区的三重支撑</h3>
+            <p>创作者是内容生态的根。磁力搜索磁力链接为入驻创作者提供三重支撑。其一是分成机制：播放、收藏、专题入选与商业合作四条收益路径并行，分成比例与结算周期在后台实时可见，避免创作者在不确定中消耗信任。其二是成长体系：新人训练营、月度选题工作坊、剪辑与调色公开课、一对一作品诊断，把成长路径从“自己摸索”变成“有节奏地进阶”。其三是社区氛围：评论区鼓励具体、有信息量的讨论，对空洞攻击与恶意引战有明确的处理规则，让创作者愿意在评论区停留，而不是发布完就离开。</p>
+            <p>我们还观察到，创作者最在意的往往不是单条视频的数据，而是“被认真对待”的感觉。因此平台在专题策划阶段就会邀请创作者参与，让他们的表达意图与专题方向真正对齐；在内容上线后，编辑会同步给出数据反馈与优化建议；在创作者遇到版权争议时，平台提供法务与取证支持。这些看起来不直接产生播放量的工作，恰恰是磁力搜索磁力链接能够持续吸引优质创作者、保持内容生态健康的关键。对我们来说，用户至上是具体的，它体现在每一次结算、每一条反馈与每一次公开透明的规则调整里。</p>
+            <h3>四、未来的方向：更清晰的分发，更克制的商业化</h3>
+            <p>面向下一阶段，磁力搜索磁力链接会把重心放在两个方向。第一是更清晰的分发：优化标签体系与兴趣图谱，让用户更容易在庞杂内容中找到与自己真正相关的那一小部分，减少无效浏览；同时把专题、合集与片单做成更容易被收藏和回访的结构，提升长尾内容的生命周期。第二是更克制的商业化：合作品牌内容必须与平台调性匹配，明确标注，不干扰正常观看；广告位数量设有上限，避免体验被切割；商业合作收益的一部分会回流到创作者扶持基金，让商业化与内容建设形成正向循环。</p>
+            <p>我们清楚，视频品牌的竞争最终不是比谁的库更大，而是比谁更懂用户与创作者之间那条细微的连接。磁力搜索磁力链接会继续以匠心打磨内容、以真实面对社区、以专业服务企业客户，把“官方网站”这四个字做成一份长期可被验证的承诺。无论你是第一次访问的观众，还是已经持续更新数月的创作者，我们都希望你能在这里找到属于自己的那段影像，并且愿意一次次回来。</p>
+          </div>
+          <aside class="mlx-parse-side" aria-label="平台解析要点">
+            <div class="mlx-parse-note">
+              <b>定位</b>
+              <p>企业级视频内容平台与创作者社区，专注原创、正版、高清的精品影像生产与分发。</p>
+            </div>
+            <div class="mlx-parse-note">
+              <b>三条内容通道</b>
+              <p>官方自制树立品质标杆，创作者入驻做垂类深度，用户投稿保留社区真实感。</p>
+            </div>
+            <div class="mlx-parse-note">
+              <b>双审核机制</b>
+              <p>机器初筛负责版权与画质，人工复审负责价值判断与叙事完整，宁可慢一点。</p>
+            </div>
+            <div class="mlx-parse-note">
+              <b>创作者支撑</b>
+              <p>四条收益路径、成长训练营与规则透明的社区氛围，让创作可以持续。</p>
+            </div>
+            <div class="mlx-parse-note">
+              <b>运营基调</b>
+              <p>持续运营、克制的商业化与长期主义更新节奏，构建值得信赖的品牌口碑。</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵：双列简介 -->
+  <section class="mlx-section" id="mlx-authors" aria-labelledby="mlx-authors-title">
+    <div class="mlx-main">
+      <div class="mlx-sec-head">
+        <div>
+          <p class="mlx-eyebrow">创作者矩阵</p>
+          <h2 class="mlx-h2" id="mlx-authors-title">与<em>磁力搜索磁力链接</em>同行的创作者</h2>
+          <p class="mlx-lead">他们是平台内容生态的中坚力量，覆盖城市影像、声音设计、剪辑教学与人物访谈等方向，你可以在这里认识他们。</p>
+        </div>
+        <button class="mlx-btn mlx-btn-ghost" type="button" data-mlx-modal="submit">申请入驻 ›</button>
+      </div>
+
+      <div class="mlx-author-grid">
+        <article class="mlx-author-card">
+          <div class="mlx-avatar mlx-av-1" aria-hidden="true">半城</div>
+          <div class="mlx-author-body">
+            <h3>半城影像 <span class="mlx-chip">城市探索</span></h3>
+            <p class="mlx-author-field">擅长：城市纪录 / 街拍 / 口述史</p>
+            <div class="mlx-author-nums"><span>作品 86</span><span>粉丝 12.4万</span></div>
+            <p>长期用镜头记录老城区的日常变化，习惯在同一个路口连续拍摄数月。作品节奏克制，偏爱自然光与长镜头，相信城市的答案藏在最普通的清晨里。</p>
+            <button class="mlx-author-more" type="button" data-mlx-author="半城影像">查看主页与近期更新 ›</button>
+          </div>
+        </article>
+
+        <article class="mlx-author-card">
+          <div class="mlx-avatar mlx-av-2" aria-hidden="true">声场</div>
+          <div class="mlx-author-body">
+            <h3>声场实验室 <span class="mlx-chip mlx-chip-cyan">声音设计</span></h3>
+            <p class="mlx-author-field">擅长：拟音 / 混音 / 配乐选型</p>
+            <div class="mlx-author-nums"><span>作品 54</span><span>粉丝 8.7万</span></div>
+            <p>由两位声音设计师组成，专注把听觉工程拆成普通人可用的方法。课程强调动手，常带着一堆日用品进棚演示，被观众称为“最会省钱的声音课”。</p>
+            <button class="mlx-author-more" type="button" data-mlx-author="声场实验室">查看主页与近期更新 ›</button>
+          </div>
+        </article>
+
+        <article class="mlx-author-card">
+          <div class="mlx-avatar mlx-av-3" aria-hidden="true">知野</div>
+          <div class="mlx-author-body">
+            <h3>林知野 <span class="mlx-chip mlx-chip-hot">创作幕后</span></h3>
+            <p class="mlx-author-field">擅长：短片导演 / 后期流程</p>
+            <div class="mlx-author-nums"><span>作品 41</span><span>粉丝 15.1万</span></div>
+            <p>独立短片导演，擅长在有限预算里完成完整叙事。乐于公开自己的工作流程与失败经验，认为把过程讲清楚比展示结果更有价值。</p>
+            <button class="mlx-author-more" type="button" data-mlx-author="林知野">查看主页与近期更新 ›</button>
+          </div>
+        </article>
+
+        <article class="mlx-author-card">
+          <div class="mlx-avatar mlx-av-4" aria-hidden="true">选题</div>
+          <div class="mlx-author-body">
+            <h3>选题研究员 <span class="mlx-chip mlx-chip-cyan">知识科普</span></h3>
+            <p class="mlx-author-field">擅长：内容方法论 / 数据拆解</p>
+            <div class="mlx-author-nums"><span>作品 63</span><span>粉丝 9.8万</span></div>
+            <p>用数据和样本说话的内容研究者，擅长把模糊的创作直觉翻译成可执行的步骤。视频信息密度高，配套图文与模板下载，被许多新人当作入门手册。</p>
+            <button class="mlx-author-more" type="button" data-mlx-author="选题研究员">查看主页与近期更新 ›</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户评价：引用摘录 + 短评列表 -->
+  <section class="mlx-section" id="mlx-reviews" aria-labelledby="mlx-reviews-title">
+    <div class="mlx-main">
+      <div class="mlx-sec-head">
+        <div>
+          <p class="mlx-eyebrow">用户口碑</p>
+          <h2 class="mlx-h2" id="mlx-reviews-title">真实的评价，<em>磁力搜索磁力链接</em>的社区温度</h2>
+          <p class="mlx-lead">我们保留了不同长度、不同维度的评价，有好评也有建议。用户至上不是口号，而是把这些声音放进产品迭代的清单里。</p>
+        </div>
+      </div>
+
+      <div class="mlx-quote-band">
+        <blockquote class="mlx-quote">“在这里第一次看到有人把后期流程完整讲完，包括那些失败的尝试。看完就动手剪了自己的第一条片子。”<b>—— 观众 @南岸风</b></blockquote>
+        <blockquote class="mlx-quote">“专题策划分得很克制，不硬凑。收藏夹里已经攒了三个合集，周末固定回来补。”<b>—— 观众 @小满不上班</b></blockquote>
+        <blockquote class="mlx-quote">“作为入驻创作者，最直观的感受是反馈具体。编辑会给到时间点级别的建议，这比只报数据有用得多。”<b>—— 创作者 @老周手记</b></blockquote>
+      </div>
+
+      <div class="mlx-comment-list">
+        <article class="mlx-comment">
+          <div class="mlx-avatar-sm mlx-av-1" aria-hidden="true">陈</div>
+          <div>
+            <div class="mlx-comment-head"><b>陈默的放映室</b><span class="mlx-score">★★★★★</span><time>2026-11-20</time></div>
+            <p>画质确实稳定，4K 片源加载也不卡，这点比很多同类站点强。希望以后能增加按拍摄设备筛选的维度，方便器材党找参考。</p>
+          </div>
+        </article>
+        <article class="mlx-comment">
+          <div class="mlx-avatar-sm mlx-av-2" aria-hidden="true">阿</div>
+          <div>
+            <div class="mlx-comment-head"><b>阿依的夜班车</b><span class="mlx-score">★★★★☆</span><time>2026-11-19</time></div>
+            <p>城市切片第二季第四集看哭了。那种拍法很朴实，但情绪特别足。就是更新速度再快一点就更好了。</p>
+          </div>
+        </article>
+        <article class="mlx-comment">
+          <div class="mlx-avatar-sm mlx-av-3" aria-hidden="true">周</div>
+          <div>
+            <div class="mlx-comment-head"><b>老周手记</b><span class="mlx-score">★★★★★</span><time>2026-11-17</time></div>
+            <p>从投稿到上线大概两周，中间编辑来回沟通了三次，主要是版权和素材出处的问题。流程严谨是好事，也希望审核进度能在后台多给几个节点提示。</p>
+          </div>
+        </article>
+        <article class="mlx-comment">
+          <div class="mlx-avatar-sm mlx-av-4" aria-hidden="true">北</div>
+          <div>
+            <div class="mlx-comment-head"><b>北纬三十度</b><span class="mlx-score">★★★★☆</span><time>2026-11-15</time></div>
+            <p>声音实验室那一期直接改变了我做短片的方式。以前总觉得声音是后期补的，现在拍摄前就会先想好听什么。</p>
+          </div>
+        </article>
+        <article class="mlx-comment">
+          <div class="mlx-avatar-sm mlx-av-5" aria-hidden="true">麦</div>
+          <div>
+            <div class="mlx-comment-head"><b>麦田与铁皮</b><span class="mlx-score">★★★★★</span><time>2026-11-13</time></div>
+            <p>评论区氛围是我留在这里的主要原因。大家讨论具体，很少互呛，有问题真的有人认真回答。</p>
+          </div>
+        </article>
+        <article class="mlx-comment">
+          <div class="mlx-avatar-sm mlx-av-1" aria-hidden="true">许</div>
+          <div>
+            <div class="mlx-comment-head"><b>许多云的下午</b><span class="mlx-score">★★★☆☆</span><time>2026-11-11</time></div>
+            <p>内容没问题，但搜索结果的排序有时不太懂，明明更相关的内容排在后面。希望搜索准确度继续打磨。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：创作灵感 + 企业动态 + 合作品牌 + FAQ -->
+  <section class="mlx-section" id="mlx-log" aria-labelledby="mlx-support-title">
+    <div class="mlx-main">
+      <div class="mlx-sec-head">
+        <div>
+          <p class="mlx-eyebrow">品牌动态与支持</p>
+          <h2 class="mlx-h2" id="mlx-support-title">创作灵感、<em>企业动态</em>与合作生态</h2>
+          <p class="mlx-lead">磁力搜索磁力链接把编辑部的灵感工具、官方更新与合作信息集中在这里，方便创作者与企业伙伴快速了解平台近况。</p>
+        </div>
+      </div>
+
+      <div class="mlx-inspire-grid">
+        <div class="mlx-inspire-card">
+          <h3>创作灵感与选题工具</h3>
+          <ul class="mlx-inspire-list">
+            <li>脚本灵感：用“一个人、一件物、一个时间点”的结构，快速搭出三分钟短片的叙事骨架。</li>
+            <li>标题建议：先写信息，再补情绪，最后删掉一切可以被删除的形容词。</li>
+            <li>剪辑思路：先定节奏再看素材，别让镜头数量决定你的情绪长度。</li>
+            <li>拍摄清单：外景前检查光线方向、收音距离与备用电池，比多带一支镜头更有用。</li>
+            <li>投稿攻略：在投稿页说明素材出处与授权情况，可以显著缩短审核时间。</li>
+          </ul>
+        </div>
+        <div class="mlx-inspire-card">
+          <h3>企业动态 · 官方发布</h3>
+          <ul class="mlx-log">
+            <li><time>2026-11-22</time><span>城市切片第二季正式上线，首周更新八条原创短片，专题页同步开放合集收藏。</span></li>
+            <li><time>2026-11-20</time><span>创作者扶持计划第三期开放报名，覆盖设备支持、选题诊断与流量扶持三项权益。</span></li>
+            <li><time>2026-11-18</time><span>高清片库完成画质升级，精选内容默认支持 4K 播放，同时优化了移动端首帧加载。</span></li>
+            <li><time>2026-11-14</time><span>平台上线评论规范说明页，明确鼓励具体讨论与信息补充，反对恶意引战。</span></li>
+            <li><time>2026-11-08</time><span>声音实验室专题与两家音频设备品牌达成合作，将为创作者提供设备试用名额。</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="font-size:17px;margin:34px 0 14px;color:#d8e5ff">合作品牌与伙伴</h3>
+      <div class="mlx-partners">
+        <div class="mlx-partner"><span class="mlx-partner-mark">光</span><div><b>光棚影像设备</b><span>器材支持伙伴</span></div></div>
+        <div class="mlx-partner"><span class="mlx-partner-mark">声</span><div><b>声谷音频</b><span>声音实验室联合企划</span></div></div>
+        <div class="mlx-partner"><span class="mlx-partner-mark">城</span><div><b>城市文化档案馆</b><span>口述史素材合作</span></div></div>
+        <div class="mlx-partner"><span class="mlx-partner-mark">印</span><div><b>印厂计划</b><span>专题图录联合出品</span></div></div>
+      </div>
+
+      <h3 style="font-size:17px;margin:34px 0 14px;color:#d8e5ff" id="mlx-faq">常见问题</h3>
+      <div class="mlx-faq">
+        <details>
+          <summary>如何向磁力搜索磁力链接投稿？</summary>
+          <p>点击页面上的“我要投稿”按钮填写表单，附上视频文件或可访问链接、素材授权说明与创作者简介。编辑部通常在五个工作日内给出初审反馈。</p>
+        </details>
+        <details>
+          <summary>平台对画质和时长有什么要求？</summary>
+          <p>建议投稿画质不低于 1080p，精选与专题内容优先采用 4K 片源。时长没有硬性上限，但三分钟以上的内容请在开头二十秒内建立清晰的信息钩子。</p>
+        </details>
+        <details>
+          <summary>入驻创作者能获得哪些支持？</summary>
+          <p>包括分成收益路径、选题工作坊、剪辑与声音公开课、一对一作品诊断，以及专题企划的联合策划机会。具体权益按入驻等级与内容表现逐步开放。</p>
+        </details>
+        <details>
+          <summary>为什么我的视频审核时间比较长？</summary>
+          <p>磁力搜索磁力链接采用机器初筛加人工复审的双审核机制，涉及第三方素材、音乐授权或新闻类内容时会增加复核环节。流程严谨是为了保护创作者与用户的合法权益。</p>
+        </details>
+        <details>
+          <summary>可以申请专题合作或品牌联名吗？</summary>
+          <p>可以。请通过页面底部的联系邮箱提交合作意向，说明品牌定位、合作形式与预算区间，编辑部会在一周内回复是否进入下一轮沟通。</p>
+        </details>
+        <details>
+          <summary>平台如何保护原创内容？</summary>
+          <p>所有入选内容均进行版权指纹登记，发现搬运时可提交证据发起下架流程。平台同时为签约创作者提供法务咨询与取证支持，并定期公示处理结果。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA 投稿 -->
+  <div class="mlx-main">
+    <div class="mlx-cta">
+      <div>
+        <h2>把你的影像放进磁力搜索磁力链接的片单</h2>
+        <p>无论是一段城市清晨，还是一次完整的创作实验，我们都愿意认真看完。投稿入口长期开放，期待与你共同生长。</p>
+      </div>
+      <div class="mlx-cta-actions">
+        <button class="mlx-btn mlx-btn-primary" type="button" data-mlx-modal="submit">立即投稿</button>
+        <button class="mlx-btn mlx-btn-ghost" type="button" data-mlx-modal="contact">联系我们</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- S8 页脚 -->
+<footer class="mlx-footer">
+  <div class="mlx-footer-grid">
+    <div>
+      <div class="mlx-brand" style="margin-bottom:12px">
+        <span class="mlx-brand-mark">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 10l18 11v22L32 54 14 43V21z" fill="none" stroke="#34d399" stroke-width="3"/><circle cx="32" cy="32" r="7" fill="#34d399"/></svg>
+        </span>
+        <span>
+          <span class="mlx-brand-name">磁力搜索磁力链接</span>
+          <span class="mlx-brand-sub">OFFICIAL VIDEO</span>
+        </span>
+      </div>
+      <p>磁力搜索磁力链接官方网站，企业级视频内容平台与创作者社区。我们坚持原创、正版、高清的精品内容生产，深耕影像垂直领域，以持续运营与用户至上的态度构建值得信赖的内容生态。</p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#mlx-feature">精选视频</a></li>
+        <li><a href="#mlx-topics">专题企划</a></li>
+        <li><a href="#mlx-authors">创作者矩阵</a></li>
+        <li><a href="#mlx-reviews">用户口碑</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于平台</h4>
+      <ul>
+        <li><a href="#mlx-parse">品牌深度解析</a></li>
+        <li><a href="#mlx-log">企业动态</a></li>
+        <li><a href="#mlx-faq">常见问题</a></li>
+        <li><a href="#mlx-top">返回顶部</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>联系与合作</h4>
+      <ul>
+        <li>投稿与合作：mlx-contact@mlx-video.cn</li>
+        <li>商务合作：bd@mlx-video.cn</li>
+        <li>工作时间：周一至周五 10:00–19:00</li>
+        <li>内容举报：通过站内反馈通道提交</li>
+      </ul>
+    </div>
+  </div>
+  <div class="mlx-footer-bottom">
+    <span>© 2026 磁力搜索磁力链接 官方网站 · 版权所有</span>
+    <span>持续运营中 · 备案号：京ICP备2026008821号-3</span>
+  </div>
+</footer>
+
+<button class="mlx-totop" id="mlx-totop" type="button" aria-label="回到顶部">↑</button>
+<div class="mlx-toast" id="mlx-toast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="mlx-modal" id="mlx-modal-submit" role="dialog" aria-modal="true" aria-labelledby="mlx-modal-submit-title">
+  <div class="mlx-modal-box">
+    <button class="mlx-modal-close" type="button" data-mlx-close aria-label="关闭投稿窗口">✕</button>
+    <h3 id="mlx-modal-submit-title">向磁力搜索磁力链接投稿</h3>
+    <p>请留下联系方式与作品说明，编辑会在五个工作日内回复。提交即视为同意平台内容规范。</p>
+    <form id="mlx-submit-form">
+      <div class="mlx-field"><label for="mlx-f-name">称呼</label><input id="mlx-f-name" name="name" type="text" placeholder="你的昵称或真名" required></div>
+      <div class="mlx-field"><label for="mlx-f-contact">联系方式</label><input id="mlx-f-contact" name="contact" type="text" placeholder="邮箱或手机号" required></div>
+      <div class="mlx-field"><label for="mlx-f-desc">作品说明</label><textarea id="mlx-f-desc" name="desc" placeholder="作品方向、时长、素材授权情况" required></textarea></div>
+      <button class="mlx-btn mlx-btn-primary" type="submit" style="width:100%;justify-content:center">提交投稿意向</button>
+    </form>
+  </div>
+</div>
+
+<!-- 联系弹窗 -->
+<div class="mlx-modal" id="mlx-modal-contact" role="dialog" aria-modal="true" aria-labelledby="mlx-modal-contact-title">
+  <div class="mlx-modal-box">
+    <button class="mlx-modal-close" type="button" data-mlx-close aria-label="关闭联系窗口">✕</button>
+    <h3 id="mlx-modal-contact-title">联系磁力搜索磁力链接</h3>
+    <p>内容合作、品牌联名与创作者入驻咨询，请发送邮件至 bd@mlx-video.cn 或 mlx-contact@mlx-video.cn，我们会在工作日尽快回复。</p>
+    <p style="margin-bottom:0;color:#8ff3cd">提示：投稿请优先使用页面上的投稿入口，便于编辑部统一归档与跟进。</p>
+  </div>
+</div>
+
+<!-- 作者弹窗 -->
+<div class="mlx-modal" id="mlx-modal-author" role="dialog" aria-modal="true" aria-labelledby="mlx-modal-author-title">
+  <div class="mlx-modal-box">
+    <button class="mlx-modal-close" type="button" data-mlx-close aria-label="关闭作者窗口">✕</button>
+    <h3 id="mlx-modal-author-title">创作者主页</h3>
+    <p id="mlx-modal-author-text">正在加载创作者信息。</p>
+    <div class="mlx-share-row">
+      <button type="button" data-mlx-modal="submit">向该创作者发起合作</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('mlx-toast');
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('mlx-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('mlx-show'); }, 2400);
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('mlx-burger');
+  var nav = document.getElementById('mlx-nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('mlx-open');
+      burger.classList.toggle('mlx-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('mlx-open');
+        burger.classList.remove('mlx-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索：输入提示与筛选反馈 */
+  var searchInput = document.getElementById('mlx-search-input');
+  var searchBtn = document.getElementById('mlx-search-btn');
+  var searchHint = document.getElementById('mlx-search-hint');
+  var suggestions = [
+    '城市切片 第二季',
+    '声音实验室 拟音',
+    '剪辑台上的六个夜晚',
+    '第一次被看见 新人创作者',
+    '标题结构拆解',
+    '林知野 创作幕后',
+    '半城影像 老街'
+  ];
+  function renderHint(keyword){
+    if(!searchHint) return;
+    var kw = (keyword || '').trim();
+    var matched = suggestions.filter(function(s){
+      return !kw || s.toLowerCase().indexOf(kw.toLowerCase()) > -1;
+    });
+    if(!matched.length){
+      matched = ['没有直接匹配，试试「城市切片」或「创作幕后」'];
+    }
+    searchHint.innerHTML = matched.slice(0,5).map(function(s){
+      return '<div>' + s + '</div>';
+    }).join('');
+    searchHint.classList.add('mlx-open');
+  }
+  if(searchInput){
+    searchInput.addEventListener('input', function(){ renderHint(searchInput.value); });
+    searchInput.addEventListener('focus', function(){ renderHint(searchInput.value); });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        doSearch();
+      }
+    });
+  }
+  function doSearch(){
+    var kw = searchInput ? searchInput.value.trim() : '';
+    if(searchHint) searchHint.classList.remove('mlx-open');
+    if(!kw){
+      toast('请输入关键词后再搜索');
+      return;
+    }
+    toast('已按「' + kw + '」筛选内容，相关结果正在展示');
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchHint){
+    searchHint.addEventListener('click', function(e){
+      var t = e.target.closest('div');
+      if(t){
+        if(searchInput) searchInput.value = t.textContent;
+        searchHint.classList.remove('mlx-open');
+        toast('已按「' + t.textContent + '」筛选内容');
+      }
+    });
+  }
+  document.addEventListener('click', function(e){
+    if(searchHint && !e.target.closest('.mlx-search')){
+      searchHint.classList.remove('mlx-open');
+    }
+  });
+
+  /* 收藏 / 点赞切换（视频条目） */
+  document.querySelectorAll('.mlx-icon-btn[data-mlx-fav]').forEach(function(btn){});
+  function bindToggle(){
+    document.querySelectorAll('[data-mlx-fav]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var active = btn.classList.toggle('mlx-active');
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        var count = btn.parentNode ? btn.parentNode.querySelector('.mlx-count') : null;
+        if(count){
+          var n = parseInt(count.textContent.replace(/[^\d]/g,''),10) || 0;
+          count.textContent = active ? (n + 1) : Math.max(0, n - 1);
+        }
+        toast(active ? '已加入我的收藏' : '已取消收藏');
+      });
+    });
+    document.querySelectorAll('[data-mlx-like]').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var active = btn.classList.toggle('mlx-active');
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        toast(active ? '已点赞，感谢你的支持' : '已取消点赞');
+      });
+    });
+  }
+  bindToggle();
+
+  /* 标签筛选 */
+  var filterBtns = document.querySelectorAll('[aria-label="视频标签筛选"] .mlx-btn');
+  filterBtns.forEach(function(b){
+    b.addEventListener('click', function(){
+      filterBtns.forEach(function(x){ x.classList.remove('mlx-btn-primary'); x.classList.add('mlx-btn-ghost'); });
+      b.classList.remove('mlx-btn-ghost');
+      b.classList.add('mlx-btn-primary');
+      toast('已切换分类：' + b.textContent.trim());
+    });
+  });
+
+  /* 弹窗 */
+  var modalMap = {
+    submit: 'mlx-modal-submit',
+    contact: 'mlx-modal-contact',
+    author: 'mlx-modal-author'
+  };
+  var lastFocus = null;
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(!m) return;
+    lastFocus = document.activeElement;
+    m.classList.add('mlx-open');
+    var first = m.querySelector('input,textarea,button');
+    if(first) setTimeout(function(){ first.focus(); }, 40);
+  }
+  function closeModal(m){
+    m.classList.remove('mlx-open');
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-mlx-modal]');
+    if(trigger){
+      e.preventDefault();
+      var key = trigger.getAttribute('data-mlx-modal');
+      if(modalMap[key]) openModal(modalMap[key]);
+      return;
+    }
+    var closeBtn = e.target.closest('[data-mlx-close]');
+    if(closeBtn){
+      var m = closeBtn.closest('.mlx-modal');
+      if(m) closeModal(m);
+      return;
+    }
+    if(e.target.classList && e.target.classList.contains('mlx-modal')){
+      closeModal(e.target);
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.mlx-modal.mlx-open').forEach(closeModal);
+    }
+  });
+
+  /* 作者信息弹窗 */
+  var authorData = {
+    '半城影像': '半城影像，城市纪录方向创作者，入驻磁力搜索磁力链接两年，累计作品 86 条。长期跟踪老城区变化，代表作《城市切片》系列。编辑评语：他的镜头很少移动，但每次都在讲一个完整的地方故事。',
+    '声场实验室': '声场实验室，由两位声音设计师组成的双人组合，专注拟音与混音教学。在平台开设《声音实验室》专题，累计更新二十余期，配套模板被大量新人使用。',
+    '林知野': '林知野，独立短片导演，擅长在有限预算内完成完整叙事。平台首映短片《剪辑台上的六个夜晚》主创，长期公开后期流程与失败经验，被称为最愿意分享过程的创作者之一。',
+    '选题研究员': '选题研究员，内容方法论创作者，以数据和样本拆解创作直觉。作品信息密度高，配套图文与模板下载，是平台新人训练营的常驻讲师。'
+  };
+  document.querySelectorAll('[data-mlx-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-mlx-author');
+      var title = document.getElementById('mlx-modal-author-title');
+      var text = document.getElementById('mlx-modal-author-text');
+      if(title) title.textContent = name + ' · 创作者主页';
+      if(text) text.textContent = authorData[name] || '该创作者的详细资料正在整理中。';
+      openModal('mlx-modal-author');
+    });
+  });
+
+  /* 投稿表单 */
+  var form = document.getElementById('mlx-submit-form');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = document.getElementById('mlx-f-name');
+      var contact = document.getElementById('mlx-f-contact');
+      var desc = document.getElementById('mlx-f-desc');
+      if(!name.value.trim() || !contact.value.trim() || !desc.value.trim()){
+        toast('请完整填写投稿信息');
+        return;
+      }
+      form.reset();
+      var m = document.getElementById('mlx-modal-submit');
+      if(m) closeModal(m);
+      toast('投稿意向已提交，编辑会尽快与你联系');
+    });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('mlx-totop');
+  if(topBtn){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 500) topBtn.classList.add('mlx-show');
+      else topBtn.classList.remove('mlx-show');
+    }, {passive:true});
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 数字滚动（首屏数据） */
+  var counters = document.querySelectorAll('[data-mlx-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-mlx-count'),10) || 0;
+      var start = 0;
+      var step = Math.max(1, Math.round(target / 46));
+      var timer = setInterval(function(){
+        start += step;
+        if(start >= target){
+          start = target;
+          clearInterval(timer);
+        }
+        el.textContent = target >= 1000 ? start.toLocaleString('en-US') : start;
+      }, 26);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, {threshold:.4});
+    counters.forEach(function(c){ io.observe(c); });
+  } else {
+    runCounters();
+  }
+})();
+</script>
+</body>
+            </html>
